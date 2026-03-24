@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мир Настольных Игр</title>
+  <meta name="description" content="Сайт для любителей настольных игр: подборки, советы, клубы и события." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <div class="logo">
+        <span class="logo__icon">🎲</span>
+        <span class="logo__text">Мир Настольных Игр</span>
+      </div>
+      <nav class="nav">
+        <a href="#games" class="nav__link">Игры</a>
+        <a href="#clubs" class="nav__link">Клубы</a>
+        <a href="#guides" class="nav__link">Гайды</a>
+        <a href="#reviews" class="nav__link">Отзывы</a>
+      </nav>
+      <button class="btn btn--outline" id="themeToggle">Тёмная тема</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <h1>Собери друзей за одним столом</h1>
+          <p class="hero__subtitle">
+            Открой для себя лучшие настольные игры, найди единомышленников и создавай незабываемые вечера.
+          </p>
+          <div class="hero__actions">
+            <a href="#games" class="btn">Подобрать игру</a>
+            <a href="#clubs" class="btn btn--ghost">Найти клуб</a>
+          </div>
+          <div class="hero__stats">
+            <div class="stat">
+              <span class="stat__value">150+</span>
+              <span class="stat__label">игр в подборке</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value">30+</span>
+              <span class="stat__label">городов с клубами</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value">5–120</span>
+              <span class="stat__label">минут партия</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__card">
+          <div class="hero-card">
+            <h2>Вечер игр</h2>
+            <p>Собери компанию, выбери игру и наслаждайся живым общением без экранов.</p>
+            <ul class="hero-card__list">
+              <li>✔ Для 2–6 игроков</li>
+              <li>✔ Семейные и хардкорные игры</li>
+              <li>✔ Гайды для новичков</li>
+            </ul>
+            <span class="hero-card__tag">Настолки объединяют</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="games">
+      <div class="container">
+        <div class="section__header">
+          <h2>Подборка настольных игр</h2>
+          <p>Выбери игру по количеству игроков, времени партии и уровню сложности.</p>
+        </div>
+
+        <div class="filters">
+          <div class="filters__group">
+            <label for="playersFilter">Кол-во игроков</label>
+            <select id="playersFilter">
+              <option value="all">Не важно</option>
+              <option value="2">2</option>
+              <option value="3-4">3–4</option>
+              <option value="5+">5+</option>
+            </select>
+          </div>
+          <div class="filters__group">
+            <label for="timeFilter">Время партии</label>
+            <select id="timeFilter">
+              <option value="all">Не важно</option>
+              <option value="short">До 30 мин</option>
+              <option value="medium">30–60 мин</option>
+              <option value="long">60+ мин</option>
+            </select>
+          </div>
+          <div class="filters__group">
+            <label for="typeFilter">Тип игры</label>
+            <select id="typeFilter">
+              <option value="all">Все</option>
+              <option value="family">Семейная</option>
+              <option value="party">Пати</option>
+              <option value="strategy">Стратегия</option>
+              <option value="coop">Кооператив</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="cards" id="gamesGrid">
+          <!-- Карточки игр добавляются скриптом -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="clubs">
+      <div class="container">
+        <div class="section__header">
+          <h2>Клубы и встречи</h2>
+          <p>Найди живое общение и регулярные встречи настольщиков в своём городе.</p>
+        </div>
+        <div class="grid grid--2">
+          <div class="card">
+            <h3>Как найти клуб</h3>
+            <ul class="list">
+              <li>Искать по запросу «клуб настольных игр + твой город».</li>
+              <li>Заглянуть в локальные хобби-магазины и кафе.</li>
+              <li>Проверить группы в соцсетях и мессенджерах.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Советы новичкам</h3>
+            <ul class="list">
+              <li>Не бойся приходить один — настольщики дружелюбные.</li>
+              <li>Начни с простых игр, чтобы влиться в компанию.</li>
+              <li>Спроси, можно ли сфотографировать партию для вдохновения.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="guides">
+      <div class="container">
+        <div class="section__header">
+          <h2>Гайды и подборки</h2>
+          <p>С чего начать, если вы только открываете для себя настолки.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card card--guide">
+            <h3>5 игр для первого вечера</h3>
+            <p>Лёгкие правила, много эмоций и минимальное время объяснения.</p>
+          </article>
+          <article class="card card--guide">
+            <h3>Игры для двоих</h3>
+            <p>Идеально для пары или лучшего друга: от дуэлей до кооперативов.</p>
+          </article>
+          <article class="card card--guide">
+            <h3>Стратегии и евроигры</h3>
+            <p>Для тех, кто любит просчитывать ходы и строить комбо.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="reviews">
+      <div class="container">
+        <div class="section__header">
+          <h2>Отзывы игроков</h2>
+          <p>Истории людей, которые уже полюбили настольные игры.</p>
+        </div>
+        <div class="reviews">
+          <article class="review">
+            <p class="review__text">
+              «Настолки стали нашим главным семейным ритуалом по выходным. Дети сами просят отложить телефоны».
+            </p>
+            <span class="review__author">— Анна, 32 года</span>
+          </article>
+          <article class="review">
+            <p class="review__text">
+              «Сначала пришёл в клуб один, теперь у нас своя компания на 8 человек и целый шкаф игр».
+            </p>
+            <span class="review__author">— Алексей, 27 лет</span>
+          </article>
+          <article class="review">
+            <p class="review__text">
+              «Настолки помогли сплотить команду на работе лучше любых тимбилдингов».
+            </p>
+            <span class="review__author">— Марина, 29 лет</span>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Мир Настольных Игр. Любите настолки и делитесь ими с друзьями.</p>
+      <p class="footer__note">Этот сайт — демо-страница. Наполни его своими играми, клубами и историями.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

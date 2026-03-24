@@ -1,0 +1,17 @@
+{
+  "name": "mir-nastolnyh-igr",
+  "version": "1.0.0",
+  "description": "Одностраничный сайт для любителей настольных игр.",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "boardgames",
+    "настольные-игры",
+    "landing"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {}
+}
+
